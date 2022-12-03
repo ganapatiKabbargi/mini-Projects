@@ -1,0 +1,30 @@
+.bg-img{
+    background: url(https://images.unsplash.com/photo-1475257026007-0753d5429e10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-position: center;
+    background-attachment: fixed;
+    
+    background-size: 130%;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    opacity: 1;
+}
+.icon{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://images.unsplash.com/photo-1561484930-998b6a7b22e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container h1{
+    color: #fff;
+}
