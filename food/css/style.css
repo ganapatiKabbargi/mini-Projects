@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*,
+::after,
+::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family:'Poppins', sans-serif ;
+}
+.container{
+    max-width:1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+.btn1{
+    display: inline-block;
+    background: #028e72;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-left: -2rem;
+}
+
+/* ######################################### navbar styling ################################################# */
+.navbar input[type="checkbox"],
+.navbar .hamberger-lines{
+    opacity: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 6rem;
+    padding: 1.5rem 0;
+    background: rgba(0, 0, 0, 0.653);
+    position: fixed;
+    z-index: 999;
+    
+   
+
+}
+.logo{
+    font-size: 3rem;
+    font-weight: 600;
+    color: #f7f7f7;
+    margin-left: 0;
+
+}
+
+.navbar-items li{
+    list-style: none;
+    display: inline;
+}
+.navbar-items a{
+    text-decoration: none;
+    padding: 0 1.6rem;
+    font-size: 1.6rem;
+    color: #f7f7f7;
+    /* color: #f7f7f7; */
+}
+  /* ######################################## showcase styling ############################################### */
+
+  #show-case{
+    height: 50vh;
+    width: 100%;
+    background: url(../image/pexels-monicore-1391487.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #show-case h1{
+    font-size: 2.4rem;
+    color: #f7f7f7;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  #show-case p{
+    font-size: 1.6rem;
+    color: #f7f7f7;
+    margin-top: .5rem;
+  }
+  #show-case a{
+    text-decoration: none;
+    padding: 1.2rem 3rem;
+    color: #fff;
+    text-transform: uppercase;
+    background: #028e72;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 2rem;
+  }
+     /* ############################################ about styling #################################### */
+
+     .about-us{
+        /* border: 2px solid green; */
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
+        max-height: 450px;
+        margin-top: 5rem;
+        /* width: 100%; */
+       
+     }
+     .about-us img{
+        object-position: left;
+        object-fit: cover;  
+        display: block;
+         height: 400px;
+         max-width: 100%;
+
+         /* margin: auto; */
+
+     } 
+     .image{
+         /* border: 2px solid green; */
+        flex:1 1 400px;
+        padding: 1rem;
+        position: relative;
+        animation: slide 1s ease-out;
+     }
+     .text-box{
+        /* border: 2px solid red; */
+        padding: 1rem;
+        flex:1 1 400px;
+        margin: auto;
+        position: relative;
+        animation: slide1 1s ease-out;
+    
+     }
+     .text-box h1{
+        font-size: 2.6rem;
+     }
+     .text-box p{
+        font-size: 1.4rem;
+     }
+
+
+          /* ###################################  aniation styling    ####################################### */
+        
+      @keyframes slide {
+        0%{
+            top: 0;
+            left: 1000px;
+
+        }
+        100%{
+top: 0;
+left: 0;
+        }
+      }
+      @keyframes slide1 {
+        0%{
+            top: 0;
+            left: -1000px;
+
+        }
+        100%{
+top: 0;
+left: 0;
+        }
+      }
+
+         /* ################################### type of food  styling ########################## */
+
+    .food-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /* margin-top: 4rem; */
+        padding: 4rem 0;
+    }
+    #food .food-head{
+        font-size: 2.2rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-top: 4rem;
+      text-align: center;
+        
+
+    }
+    .food-container img{
+        display: block;
+        height: 200px;
+    }
+    .food-type h1{
+        color: #fff;
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+    .fruit{
+        position: relative;
+    }
+    .fruit .image-content{
+        position:absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        transition: all .4s ease-in-out;
+        z-index: 1;
+        opacity: 0;
+
+    }
+    .vegitable{
+        position: relative;
+    }
+    .vegitable .image-content{
+        position:absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        transition: all .4s ease-in-out;
+        z-index: 1;
+        opacity: 0;
+
+
+    }
+    .vegitable a{
+        margin-left: 1.2rem;
+    }
+    .grains{
+        position: relative;
+    }
+    .grains .image-content{
+        position:absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        transition: all .4s ease-in-out;
+        z-index: 1;
+        opacity: 0;
+
+    }
+     .grains a{
+    margin-left:auto;
+    }
+    .grains h1{
+        margin-left:1rem;
+        }
+         
+    /* ##################################### background slide styling ###################################### */
+
+    .fruit::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000000b4;
+        transition: all .4s ease-in-out;
+        z-index: 0;
+        opacity: 0;
+    }
+    .fruit:hover::after{
+        opacity: 1;
+    }
+    .fruit:hover .image-content{
+        opacity: 1;
+        top: 50%;
+    }
+       
+          /* ########################################### */
+
+          .vegitable::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000000b4;
+            transition: all .4s ease-in-out;
+            z-index: 0;
+            opacity: 0;
+        }
+        .vegitable:hover::after{
+            opacity: 1;
+        }
+        .vegitable:hover .image-content{
+            opacity: 1;
+            top: 50%;
+        }
+
+        /* ############################################### */
+
+        .grains::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000000b4;
+            transition: all .4s ease-in-out;
+            z-index: 0;
+            opacity: 0;
+        }
+        .grains:hover::after{
+            opacity: 1;
+        }
+        .grains:hover .image-content{
+            opacity: 1;
+            top: 50%;
+        }
+
+    /* ################################ food enu styling ################################# */
+    
+    .food-menu-container{
+        padding: 50px,0px,30px,0px;
+        display: flex;
+        flex-wrap: wrap;
+        /* border: 2px solid green; */
+    
+     
+    }
+    .food-menu-item img{
+display: block;
+height: 250px;
+width: 250px;
+border-radius: 50%;
+object-fit: cover;
+object-position: center;
+
+
+    }
+    .food-menu-item{
+   /* border: 2px solid red; */
+   display: flex;
+   flex: 1 1 500px;
+   padding: 2rem 0;
+  
+    }
+    .food-description{
+        margin: auto;
+        padding-left:2rem ;
+    }
+    .food-title{
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: #0fb864;
+    }
+    .food-price{
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #ff0000;
+    }
+    .food-menu-item p{
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    #heading{
+        font-size: 2.2rem;
+        font-weight: 600;
+        text-align: center;
+        padding: 2rem 0;
+    }
+    
+    /* #################################### testiony styling ####################### */
+     .testimony-heading{
+        font-size: 2.2rem;
+        font-weight: 600;
+        /* text-transform: uppercase; */
+        text-align: center;
+        padding-top: 4rem;
+     }
+    .testimony{
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex: 1 1 200px;
+        padding: 5rem 0;
+        justify-content: space-between;
+    }
+    .testimony img{
+        display: block;
+        height: 100px;
+        width: 100px;
+        object-fit: cover;
+        object-position: center;
+        margin-left: 10rem;
+        margin-top: 1rem;
+        border-radius: 50%;
+
+    }
+    .testimony p{
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+   .name{
+        font-size: 1.4rem;
+        font-weight: 600;
+       text-align: center;
+       margin-left: -10rem;
+    }
+    .rating i{
+        color: #ffe208;
+    }
+    .rating{
+        margin-left: 11rem;
+    }
+
+    /* ######################################## contact page styling  ############################### */
+     #contact{
+        padding: 5rem 0;
+        background:rgb(226, 226, 226) ;
+     }
+    
+    
+    .contact-container{
+        display: flex;
+        background: #fff;
+        
+     }
+    .contact-container img{
+        display: block;
+        height: 400px;
+       
+
+    width: 100%;
+        /* border: 2px solid red; */
+        
+        object-fit: cover;
+        object-position: center;
+
+    }
+    .contact-info input{
+       display: block;
+       margin: 2rem 0;
+       padding: .5rem 0;
+       width: 80%;
+       outline: none;
+       /* border-bottom: 2px solid grey; */
+       
+    }
+    .contact-info{
+        /* border: 2px solid green; */
+        padding: 0 2rem;
+        margin: auto;
+        width: 50%;
+        height: 400px;
+    }
+    .contact-image{
+        width: 50%; 
+    }
+    .contact-info h1{
+        font-size: 2.2rem;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    .contact-info textarea{
+        display: block;
+        width: 80%;
+        height: 180px;
+        outline: none;
+    }
+    .contact-info a{
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        display: inline-block;
+        background: #028e72;
+        text-decoration: none;
+        padding: 1rem 4rem;
+        border-radius: 20px;
+        color: #fff;
+        margin-top: 1rem;
+        margin-left: 30%;
+
+    }
+
+    /* ##################################### footerr styling ############################# */
+
+    #footer h2{
+        color: #fff;
+        font-weight: 500;
+        font-size: 2rem;
+        padding: 1rem 0;
+        text-align: center;
+        
+    
+    }
+    #footer{
+        /* border: 2px solid red; */
+        background: rgb(0, 0, 0);
+    }
+
+
+    /* ################################# queries ############################ */
+
+
+    
