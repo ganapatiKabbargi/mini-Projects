@@ -1,0 +1,769 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+ul li{
+    list-style: none;
+}
+a{
+    color: white;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+p,li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: .15em;
+}
+h1,h2,h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+.lg-heading{
+    font-size: 3.5rem;
+}
+.md-heading{
+    font-size: 2.2rem;
+}
+.text-red{
+    color: #e63946;
+}
+.text-light{
+    color: #f4f4f4;
+}
+.text-black{
+    color: #333;
+}
+.text-grey{
+    color: #555;
+}
+.text-dark{
+    background: #333;
+}
+
+.header{
+    background: url(../img/pexels-andrei-tanase-1271619.jpg);
+
+height: 100vh;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+ .navbar{
+
+color:white;
+
+padding: 1rem;
+
+}
+.navbar .logo{
+    color: #f4f4f4;
+    float: left;
+   
+    margin-top: 1em;
+}
+ .navbar .nav-items{
+    float: right;
+    margin-top: 2em;
+    
+}
+.navbar::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+ .navbar .nav-item{
+     display: inline-block;
+     padding: 1em;
+     text-transform: uppercase;
+     
+}
+li a:hover{
+    border-bottom: 2px solid white;
+}
+.header-content{
+       position: absolute;  
+      left: 30%;
+     top: 50%;
+    transform: translate(-20%,-50%); 
+  text-align: center;    
+    
+} 
+.header-content h1{
+    text-transform: uppercase;
+    font-weight: 700;
+   
+}
+.header-content p{
+    text-transform: uppercase;
+  font-weight: 700;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: .5em 1.5em;
+    margin: 0.5em;
+}
+.btn-primary{
+    background-color: #f4f4f4;
+    border-radius: 16px;
+}
+.btn-secondary{ 
+    margin-left: 1.75rem;
+    border: 3px solid #e63946;
+    border-radius: 25px;
+    padding: 0.8rem 1.5rem;
+}
+.btn-secondary:hover{
+    background-color: #e63946;
+    color:#f4f4f4 ;
+}
+.btn-primary:hover{
+    background-color:#e63946;
+    color: #f4f4f4;
+}
+
+/* ############################### showcase styling##################### */
+.showcase{
+    background-color: #ddd;
+     padding: 10rem 0; 
+     
+}
+
+.row{
+    height: 350px;
+    box-shadow: 0px 0px 15px #555;
+    
+}
+.row1{
+    margin-bottom: 10rem;
+}
+.row1 .img-box,.row2 .text-box{
+float: left;
+width: 50%;
+
+
+}
+.row2 .img-box,.row1 .text-box{
+    float: right;
+    width: 50%;
+    
+}
+.row1 .img-box{
+    
+    height: 350px;
+  
+
+}
+.row .img-box img{
+    display: inline-block;
+width: 100%;
+height: 100%;
+object-fit: cover;
+
+}
+.row2 .img-box{
+    height: 350px;
+    
+}
+.row1 .text-box{
+    background: #f4f4f4;
+    height: 350px;
+}
+.row2 .text-box{
+    background: #f4f4f4;
+    height: 350px;
+}
+.row1 h1,.row2 h1{
+    margin: 1em 
+    .5em;
+
+      text-transform: uppercase;  
+}
+.row1 p,.row2 p{
+    margin : 3rem 1.75rem;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+ /* ################################# feature section styling ########################### */
+ .features{
+    background-color: #f4f4f4;
+ padding: 10rem 0;
+ }
+ .box-wraper{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.413);
+
+ }
+
+ .box{
+    height: 200px;
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    padding: 2rem;
+    
+ }
+  .box-1,.box-3{
+    background: #333;
+    color:#f4f4f4;
+    
+ }
+ .box-2{
+    background-image: radial-gradient( circle farthest-corner at 14.2% 24%,  rgba(239,61,78,1) 0%, rgba(239,61,78,0.81) 51.8%, rgba(239,61,78,0.63) 84.6% ); 
+ }
+   .box-wraper::after{
+    content: "";
+    display: block;
+    clear: both;
+ }   
+
+ /* #################################### footerr styling ############################# */
+ .footer{
+    background-color:#333;
+    height: 11rem;
+ }
+ .icons{
+    color: #fff;
+    text-align: center;
+    
+    padding: 2rem 0;
+ }
+ .icons i{
+    padding: 0 2rem;
+ }
+ .footer p{
+    color: #f4f4f4;
+    text-align: center;
+ }
+ 
+ /* ###################################### about styling ################################ */
+
+ section.about{
+    
+    padding: 3rem 0;
+ }
+ .list{
+    margin-top: 2rem;
+    text-align: center;
+ }
+ .about h2{
+    border-bottom: 5px solid #e63946;
+    padding-bottom: 1rem;
+ }
+ .list li{
+    font-weight: 500;
+ }
+   /* ######################### list styling  ############################### */
+ .list-right{ 
+    float: right;
+    width: 50%;
+ }
+ .list-left{
+    float: left;
+    width: 50%;
+ 
+ }
+ .list::after{
+    content: "";
+    display: block;
+    clear: both;
+  } 
+ .list li::before{
+    content: '\2713';
+    color: #e63946;
+    font-weight: bold;
+    padding: 5px 0;
+ }
+
+    /* ################################## stat styling ################################ */
+.stat{
+    text-align: center;
+    margin-top: 3rem;
+}
+.stat h1{
+    color: #e63946;
+    font-weight: bold;
+}
+.stat p{
+    font-weight: bold;
+}
+.travelled{
+    float: left;
+    width: 25%;
+}
+.places{
+    float: left;
+    width: 25%;
+}
+.guide{
+    float: left;
+    width: 25%;
+}
+.sport{
+    float: left;
+    width: 25%;
+}
+.stat::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+    
+     /* ################################# right now styling ######################### */
+
+.right{
+    margin-top: 3rem;
+    padding: 1rem 0;
+    background: #ff1111;
+    box-shadow: 5px 5px 15px rgba(51, 51, 51, 0.384) ; 
+}
+
+.right p{
+    color: white;
+    float: left;
+    width: 65%;
+    font-weight: 500;
+    margin-top: 1.3rem;
+    margin-left: 1rem;
+}
+.right a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    float: right;
+    width: 30%;
+    border: 3px solid white;
+    
+    padding: 1rem 3rem;
+    text-align: center;
+    margin-right: 1rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    
+}
+.right::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+    /* ################################# contact page stying ############################# */
+.contact-page{
+    background: #ddd;
+}
+    .contact-info{
+        
+        height: 85vh;
+        background: #ddd;
+       
+    }
+    .adress{
+        float: left;
+        width: 48%;
+        margin-left: 2rem;
+        margin-top: 3rem ;
+        background: white;
+         height: 580px; 
+    }
+    .info{
+        float: right;
+        width: 48%;
+    }
+    .contact-info{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .adress .location{
+        
+        margin: 1rem 0;
+        margin-left: 2rem;
+    }
+    .adress .mail{
+
+margin: 2rem 0;
+margin-left: 2rem;
+
+    }
+    .adress .phone{
+        
+        margin-left: 2rem;
+    }
+    .adress .image{
+       
+        min-height: 250px;
+max-width: 90%;
+        background: url(../img/pexels-expect-best-323705.jpg);
+        
+    background-size: cover;
+    object-fit: cover;
+    object-position: center;
+    margin-left: 2rem;
+    margin-top: 5rem;
+    }
+          /* ################# */
+    .info{
+        border: 2px solid red;
+        margin-top: 3rem;
+        background:white;
+        margin-left: 1rem;
+        height:580px;
+    }
+    .info h1::after{
+        content: "";
+        display: block;
+        clear: both;
+        border-bottom: 5px solid #e63946;
+    }
+    .info h1{
+        font-weight: 500;
+        margin-left: 1rem;
+    }
+    .info p{
+        margin-left: 1rem;
+    }
+    .form{
+        margin: 1rem ;
+    } 
+    .form label{
+        display: block;
+        font-size: 2rem;
+        font-weight: 500;
+
+    }
+    .form input{
+        display: block;
+        width: 60%;
+        padding: .5rem;
+    }
+    .form .text-area{
+        width: 100%;
+        height: 200px;
+    }
+    .submit{
+        display: inline-block;
+        text-decoration: none;
+        text-transform: uppercase;
+    
+        background: #e63946;
+        color: white;
+        padding: 0.5rem 4rem;
+        margin: 0 20rem;
+        border: none;
+        
+
+    }
+    .info .form label::after{
+        content: "*";
+        color:#ff1111
+
+    
+    }
+           /* ################################ media queries styling ######################## */
+
+           @media (max-width:500px){
+            html{
+                font-size: 50%;
+            }
+            .navbar .nav-items,.navbar .logo{
+                float: none;
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+            .header-content{
+                
+            position: absolute;
+            top: 50%;
+            }
+            .header-content .head{
+                color: #f4f4f4;
+            }
+            .row1 .img-box,.row1 .text-box{
+                float: none;
+                width: 100%;
+                text-align: center;
+                display: block;
+            
+            }
+            .row1 .text-box{
+                padding: 4rem;
+                height: 430px;
+            }
+            .row1 .text-box h1{
+                margin: 0;
+            }
+            
+            .row2 .img-box,.row2 .text-box{
+                float: none;
+                width: 100%;
+                text-align: center;
+                display: block;
+                
+            }
+            .row2 .img-box{
+                margin-top: 60rem;
+                
+            }
+            .row2 .text-box h1{
+                margin: 0;
+            }
+            .row2 .text-box{
+                padding-top: 4rem;
+                padding-bottom: 0;
+                color: #fff;
+                height: 340px;
+            }
+           
+            .showcase{
+               
+                height: 200rem;
+                padding-top: 6rem;
+            }
+            .box{
+                float: none;
+                display: block;
+            }
+            .features .box-wraper .box{
+                padding-bottom: 3rem;
+                height: 200px;
+                width: 100%;
+                padding-top: 4rem;
+            }
+            .right{
+                height: 15rem;
+            
+            }
+            .about .list{
+                padding: 1rem 0;
+            }
+            .right p,.right a{
+                float: none;
+                display: block;
+                width:80%;
+                text-align: center;
+                margin-left: 10%;
+            } 
+            .contact-page{
+                height: 1240px;
+
+            }
+            .contact-info{
+                width: 100%;
+                padding: 3rem 0;
+                height: 80vh;
+                
+            }
+            .contact-info .adress,.contact-info .info{
+                float: none;
+                display: block;
+                width: 100%;
+                
+                margin: 0;
+        
+            }
+            .contact-info .adress{
+                padding: 3rem 0;
+                margin-bottom: 3rem;
+            }
+            .contact-info .info{
+                
+                padding: 2rem 0;
+            }
+            .text-area{
+                width: 100%;
+            }
+            .submit{
+               
+                margin: 0 38%;
+            }
+           }
+           
+           /* #################################################### */
+
+           @media(min-width: 501px) and (max-width: 768px){
+            html{
+                font-size: 8px;
+            }
+            p{
+                font-size: 1.8rem;
+            }
+            .navbar .nav-items,.navbar .logo{
+                float: none;
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+            .header-content{
+              
+            position: absolute;
+            top: 50%;
+            }
+            .header-content .head{
+                color: #f4f4f4;
+            }
+            .row1 .img-box,.row1 .text-box{
+                float: none;
+                width: 100%;
+                text-align: center;
+                display: block;
+               
+            }
+            .row1 .text-box{
+                padding: 4rem;
+                height: 340px;
+            }
+            .row1 .text-box h1{
+                margin: 0;
+            }
+            
+            .row2 .img-box,.row2 .text-box{
+                float: none;
+                width: 100%;
+                text-align: center;
+                display: block;
+                
+            }
+            .row2 .img-box{
+                margin-top: 50rem;
+                
+            }
+            .row2 .text-box h1{
+                margin: 0;
+            }
+            .row2 .text-box{
+                padding-top: 4rem;
+                padding-bottom: 0;
+                color: #fff;
+                height: 340px;
+            }
+           
+            .showcase{
+                
+                height: 192rem;
+                padding-top: 6rem;
+            }
+            .box{
+                float: none;
+                display: block;
+            }
+            .features .box-wraper .box{
+                padding-bottom: 3rem;
+                height: 200px;
+                width: 100%;
+                padding-top: 4rem;
+            }
+            .right{
+                height: 17rem;
+            
+            }
+            .right a{
+                margin-top: 2rem;
+            }
+            .about .list{
+                padding: 1rem 0;
+            }
+            .right p,.right a{
+                float: none;
+                display: block;
+                width:80%;
+                text-align: center;
+                margin-left: 10%;
+            } 
+            .contact-page{
+                height: 1240px;
+
+            }
+            .contact-info{
+                width: 100%;
+                padding: 3rem 0;
+                height: 80vh;
+               
+            }
+            .contact-info .adress,.contact-info .info{
+                float: none;
+                display: block;
+                width: 100%;
+                
+                margin: 0;
+        
+            }
+            .contact-info .adress{
+                padding-top: 3rem;
+                padding: 3rem 0;
+                margin-bottom: 3rem;
+                
+               
+            }
+            .contact-info .info{
+               
+                padding: 2rem 0;
+            }
+           
+            .submit{
+                text-align: center;
+                
+                margin-left: 40%;
+            }
+           }
+
+           /* ############################################### */
+
+           @media(min-width: 769px) and (max-width: 1200px){
+            html{
+                font-size: 9px;
+            }
+            p{
+                font-size: 1.6rem;
+            }
+            .contact-info .adress, .contact-info .info{
+                margin-top: 10rem;
+            }
+            .row .row1 .text-box{
+                height: 500px;
+            }
+            .submit{
+                margin-left: 35%;
+               
+            }
+           
+        .row{
+            height: 450px;
+        }
+         .row1 .img-box,.row2 .img-box {
+            height: 450px;
+        }
+         .row1 .text-box,.row2 .text-box {
+            height: 450px;
+        }
+        .box{
+            height: 260px;
+        }
+        }
+
+        
+
+
+
+
