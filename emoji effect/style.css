@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:#000 ;
+   
+}
+.container{
+    width: 500px;
+    height: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+    border-radius: 20px;
+    background-color: #fff;
+   
+}
+h1{
+    text-align: center;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    /* color: rgb(255, 225, 0); */
+}
+p{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: grey;
+    font-family: serif;
+    margin-top: -10px;
+}
+.emoji{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40%;
+    width:32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    overflow: hidden; 
+  
+}
+
+.rating{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: gray;
+}
+.face{
+    transition: transform .2s;
+    
+}
+.fa-star.active{
+    color: gold;
+}
+
